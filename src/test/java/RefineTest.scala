@@ -22,7 +22,7 @@ class RefineTest extends FlatSpec with Matchers {
 
   val resDirectory = new File(getClass.getResource("./").toURI)
 
-  "A Bird" should "exists" in {
+  "A Refine" should "exists" in {
     try {
       println(resDirectory)
       Class.forName("com.rocktto.refine.Refine")
@@ -118,7 +118,7 @@ class RefineTest extends FlatSpec with Matchers {
     assert(list.size == 1)
   }
 
-  it should "find all files in directory" in {
+  it should "find all files in directory recursively" in {
     implicit val testDir = new File(resDirectory, "list_05")
 
     val allFiles = recursive(files)
