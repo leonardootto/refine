@@ -125,5 +125,4 @@ class RefineTest extends FlatSpec with Matchers {
     assert(allFiles.size == 15)
   }
 
-
 }
